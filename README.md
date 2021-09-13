@@ -90,3 +90,4 @@ wave.fromElement('audio_element_id', 'canvas_id');
    <li>Save changes and refresh browser window to see changes.</li>
    <li>Push to remote branch and create a pull request to the Wave.js master branch.</li>
 </ol>
+# stt_with_audio_waves_react.js
