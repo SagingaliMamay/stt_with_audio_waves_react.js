@@ -28,7 +28,7 @@
   "homepage": "https://foobar404.github.io/Wave.js/#/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/samuveljohns/Wave.js.git"
+    "url": "git+https://github.com/samuveljohns/Wave.js.git"
   },
   "bugs": {
     "url": "https://github.com/samuveljohns/Wave.js.git/issues"
@@ -43,5 +43,8 @@
     "rollup-plugin-terser": "^6.1.0",
     "watch": "^1.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  }
 }

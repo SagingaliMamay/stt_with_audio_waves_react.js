@@ -10,12 +10,7 @@
         margin-top: 100px;
       }
 
-      nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100;
-      }
+      
 
       .container {
         width: 25%;
@@ -42,34 +37,55 @@
         display: block;
       }
 
-      canvas {
+      .canvas {
+        display:flex;
+        background-color: rgb(245, 225, 225);
         width: 100%;
-        border: 1px solid black;
+        border: 1px solid rgb(137, 160, 159);
         box-sizing: border-box;
+        justify-content: center;
       }
 
       #mainCanvas {
         height: 100%;
         width: 100%;
         display: none;
+        justify-content:center;
+
       }
 
       .show {
         display: block !important;
       }
+      #boxes {
+        display: flex;
+        justify-content: center;
+      }
+
     </style>
   </head>
 
   <body>
-    <nav>
-      <audio id="audio" src="song.mp3" controls></audio>
-    </nav>
+   
 
     <canvas id="mainCanvas"></canvas>
-
+        <div id="react"></div>
+    <div id="boxes">
+     <label for="lang">Choose a language</label>
+     <select>
+       <option value="en">English</option>
+       <option value="fr">French</option>
+     </select>
+      <textarea id="txt1" rows="10" cols="50"></textarea>
+      
+      <select>
+        <option value="en">English</option>
+        <option value="fr">French</option>
+      </select>
+      <textarea id="txt2" rows="10" cols="50"></textarea>
+    </div>
     <main></main>
-    <label>Play from mic</label>
-    <button id="listen">Click to start mic</button>
+    <button id="listen">start</button>
     <script src="../dist/bundle.cjs.js"></script>
     <script>
       const main = document.querySelector('main');
@@ -153,5 +169,7 @@
         stroke: 1,
       });
     </script>
+
+</body>
   </body>
 </html>

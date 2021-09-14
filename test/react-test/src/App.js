@@ -1,9 +1,12 @@
 import React from 'react';
-import Wave from "./Wave"
+import Wave from "./Wave";
+import Html from "./Html";
 
 function App() {
   return (
-    <Wave></Wave>
+    <div>
+    <Html/>
+    </div>
   );
 }
 
